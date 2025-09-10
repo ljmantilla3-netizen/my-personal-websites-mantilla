@@ -5,8 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>James Mantilla | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navigation Bar Styles */
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #00ccff;
+    }
+
+    body {
+      padding-top: 70px; /* Space for fixed navbar */
+    }
+  </style>
 </head>
 <body>
+
+  <!-- ✅ NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">James Mantilla</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <div class="hero-content">
       <img src="profile.jpg" alt="James Mantilla" class="profile-pic">
@@ -16,7 +76,8 @@
     </div>
   </header>
 
-  <section class="reveal">
+  <!-- ✅ ABOUT SECTION -->
+  <section id="about" class="reveal">
     <div class="glass">
       <h2>👨 About Me</h2>
       <p>Hello! I'm <strong>James Mantilla</strong>, a Bachelor of Science in Information Technology (BSIT) student at <strong>ACES Polytechnic College</strong>. I’m passionate about tech, creativity, and innovation. My hobbies include:</p>
@@ -29,7 +90,8 @@
     </div>
   </section>
 
-  <section class="video-section reveal">
+  <!-- ✅ VIDEO SECTION -->
+  <section id="video" class="video-section reveal">
     <h2>🎬 Featured Video</h2>
     <div class="video-wrapper">
       <iframe
@@ -41,24 +103,27 @@
     </div>
   </section>
 
-  <section class="reveal">
+  <!-- ✅ PROJECT SECTION -->
+  <section id="projects" class="reveal">
     <h2>🚀 My Project</h2>
     <div class="projects">
       <div class="project">
         <a href="file:///D:/ONE%20DRIVE/OneDrive/Desktop/mantilla%202%20mid/index.html" target="_blank" rel="noopener noreferrer">
-        <img src="james.jpeg" alt="My Project"> </a>
+          <img src="james.jpeg" alt="My Project">
+        </a>
         <h3>AiGpt!</h3>
-        <p></p>
       </div>
       <div class="project">
         <a href="file:///D:/ONE%20DRIVE/OneDrive/Desktop/activity%202%20mantilla/index.html" target="_blank" rel="noopener noreferrer">
-        <img src="james5.jpeg" alt="My Project"> </a>
+          <img src="james5.jpeg" alt="My Project">
+        </a>
         <h3>My Schedule</h3>
-        <p></p>
+      </div>
     </div>
   </section>
 
-  <section class="reveal">
+  <!-- ✅ GALLERY SECTION -->
+  <section id="gallery" class="reveal">
     <h2>📸 Gallery</h2>
     <div class="gallery">
       <img src="james.jpeg" alt="Gallery 1">
@@ -68,19 +133,24 @@
     </div>
   </section>
 
-  <section class="reveal">
+  <!-- ✅ LOCATION SECTION -->
+  <section id="location" class="reveal">
     <h2>📍 My Location</h2>
     <div class="location-img">
       <img src="location.png" alt="Location">
     </div>
   </section>
-  <section class="reveal">
+
+  <!-- ✅ SCHEDULE SECTION -->
+  <section id="schedule" class="reveal">
     <h2>📍 My Schedule</h2>
     <div class="location-img">
       <img src="schedule.jpg" alt="Location">
     </div>
   </section>
-  <section class="reveal">
+
+  <!-- ✅ CONTACT SECTION -->
+  <section id="contact" class="reveal">
     <h2>📬 Contact Me</h2>
     <form id="contactForm">
       <input type="text" placeholder="Your Name" required>
@@ -90,16 +160,192 @@
     </form>
   </section>
 
+  <!-- ✅ FOOTER -->
   <footer>
     <p>✨ Designed with passion by James Mantilla | © 2025 ✨</p>
   </footer>
 
+  <!-- ✅ BACKGROUND MUSIC -->
   <audio id="bg-music" autoplay loop muted hidden>
-  <source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar.mp3" type="audio/mpeg"></audio>
+    <source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar.mp3" type="audio/mpeg">
+  </audio>
 
   <script src="mantilla.js"></script>
 
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Mantilla | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navigation Bar Styles */
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
 
-  
+    .navbar .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #00ccff;
+    }
+
+    body {
+      padding-top: 70px; /* Space for fixed navbar */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">James Mantilla</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="James Mantilla" class="profile-pic">
+      <h1>James Mantilla</h1>
+      <p>BSIT Student @ ACES Polytechnic College</p>
+      <p>Future-Ready Innovator | Tech Enthusiast | Creator</p>
+    </div>
+  </header>
+
+  <!-- ✅ ABOUT SECTION -->
+  <section id="about" class="reveal">
+    <div class="glass">
+      <h2>👨 About Me</h2>
+      <p>Hello! I'm <strong>James Mantilla</strong>, a Bachelor of Science in Information Technology (BSIT) student at <strong>ACES Polytechnic College</strong>. I’m passionate about tech, creativity, and innovation. My hobbies include:</p>
+      <ul class="hobbies">
+        <li>🎤 Singing</li>
+        <li>💃 Dancing</li>
+        <li>🍔 Eating</li>
+        <li>🎮 Playing Mobile Games</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ✅ VIDEO SECTION -->
+  <section id="video" class="video-section reveal">
+    <h2>🎬 Featured Video</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/KMfH2-fa8xg?autoplay=0&loop=1&playlist=KMfH2-fa8xg"
+        title="Featured Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ✅ PROJECT SECTION -->
+  <section id="projects" class="reveal">
+    <h2>🚀 My Project</h2>
+    <div class="projects">
+      <div class="project">
+        <a href="file:///D:/ONE%20DRIVE/OneDrive/Desktop/mantilla%202%20mid/index.html" target="_blank" rel="noopener noreferrer">
+          <img src="james.jpeg" alt="My Project">
+        </a>
+        <h3>AiGpt!</h3>
+      </div>
+      <div class="project">
+        <a href="file:///D:/ONE%20DRIVE/OneDrive/Desktop/activity%202%20mantilla/index.html" target="_blank" rel="noopener noreferrer">
+          <img src="james5.jpeg" alt="My Project">
+        </a>
+        <h3>My Schedule</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ GALLERY SECTION -->
+  <section id="gallery" class="reveal">
+    <h2>📸 Gallery</h2>
+    <div class="gallery">
+      <img src="james.jpeg" alt="Gallery 1">
+      <img src="james5.jpeg" alt="Gallery 2">
+      <img src="james3.jpeg" alt="Gallery 3">
+      <img src="james4.jpeg" alt="Gallery 4">
+    </div>
+  </section>
+
+  <!-- ✅ LOCATION SECTION -->
+  <section id="location" class="reveal">
+    <h2>📍 My Location</h2>
+    <div class="location-img">
+      <img src="location.png" alt="Location">
+    </div>
+  </section>
+
+  <!-- ✅ SCHEDULE SECTION -->
+  <section id="schedule" class="reveal">
+    <h2>📍 My Schedule</h2>
+    <div class="location-img">
+      <img src="schedule.jpg" alt="Location">
+    </div>
+  </section>
+
+  <!-- ✅ CONTACT SECTION -->
+  <section id="contact" class="reveal">
+    <h2>📬 Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message 🚀</button>
+    </form>
+  </section>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>✨ Designed with passion by James Mantilla | © 2025 ✨</p>
+  </footer>
+
+  <!-- ✅ BACKGROUND MUSIC -->
+  <audio id="bg-music" autoplay loop muted hidden>
+    <source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="mantilla.js"></script>
+
 </body>
 </html>
